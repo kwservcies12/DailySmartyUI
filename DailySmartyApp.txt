@@ -1,0 +1,17 @@
+setup react 
+npm install
+js-generate
+
+name 
+react roux rout
+git hub new file name 
+copy and paste 
+echo "# DailySmartyUI" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kwservcies12/DailySmartyUI.git
+git push -u origin main
+then get status
+the git add
