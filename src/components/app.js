@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import Logo from './logo';
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <div>
-          <h1>logo</h1>
+          logo
+          <Logo/>
         </div>
       </div>
     );
-    
-
   }
 }
