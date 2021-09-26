@@ -1,3 +1,4 @@
+   
 import React, { Component } from 'react';
 
 class Logo extends Component {
@@ -10,4 +11,4 @@ class Logo extends Component {
     }
 }
 
-export default Logo; 
+export default Logo;
