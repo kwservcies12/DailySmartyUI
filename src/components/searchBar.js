@@ -6,7 +6,6 @@ class SearchBar extends Component {
     handleFormSubmit = function({query}) {
         console.log('trying to handle submit for query', query);
     }
-    
 
     renderInput(field) {
         return <input type="text" placeholder="Search DailySmarty" {...field.input}/>
@@ -27,6 +26,7 @@ class SearchBar extends Component {
 SearchBar = reduxForm({
     form: 'searchBar'
 })(SearchBar);
+
 export default SearchBar;
 
 
