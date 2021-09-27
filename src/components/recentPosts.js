@@ -4,12 +4,25 @@ import { connect } from 'react-redux';
 
 import * as actions from '../actions';
 
-class SearchBar extends Component {
+class RecentPosts extends Component {
 
     componentDidMount() {
         this.props.fetchRecentPosts
     }
 
+    renderPosts = function() {
+        const posts = this.props.recentPost.map((post, index) => {
+            if(index < 3) {
+                return (
+                    <li key={index}>
+                        {post.title}
+                    </li>    
+                )
+            }
+        })
+        return posts
+    }
+    
     render() {
         return (
             <div className="recent-posts">
@@ -27,7 +40,12 @@ class SearchBar extends Component {
     }
 }
 
-export default connect(null, actions)(SearchBar); 
+function mapStateToProps(state) {
+    return {
+        recentPost: state.posts.recentPost
+    }
+}
+export default connect(mapStateToProps, actions)(RecentPosts); 
 
 
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Logo from './logo';
 
 class Results extends Component {
-
     render() {
         return (
             <div>
@@ -12,3 +11,4 @@ class Results extends Component {
         )
     }
 }
+export default Results;

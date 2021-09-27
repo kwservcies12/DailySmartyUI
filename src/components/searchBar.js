@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Field, reduxForm} from 'redux-form';
-
 import { withRouter } from 'react-router-dom';
 
 class SearchBar extends Component {
@@ -10,7 +9,6 @@ class SearchBar extends Component {
         //navigate to a new route.
         this.props.history.push('/results');
     }
-
     renderInput(field) {
         return <input type="text" placeholder="Search DailySmarty" {...field.input}/>
     }
@@ -30,7 +28,6 @@ class SearchBar extends Component {
 SearchBar = reduxForm({
     form: 'searchBar'
 })(SearchBar);
-//withRouter = hypercomponent
 SearchBar = withRouter(SearchBar);
 
 export default SearchBar;
