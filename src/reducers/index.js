@@ -7,6 +7,6 @@ import posts from './postsReducer';
 const rootReducer = combineReducers({
   form,
   posts
-});
+})
 
 export default rootReducer;
