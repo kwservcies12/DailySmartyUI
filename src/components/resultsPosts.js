@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class ResultsPosts extends Component {
     render() {
         return (
-            <ul className="results-posts__wrapper">
+            <ul className="results-posts">
               <div className="results-posts__wrapper">
                   <div className="results-posts__posts">
                     RESULTS GO HERE     

@@ -11,7 +11,6 @@ class Post extends Component {
 
     render() {
         return (
-            
             <li className="recent-post">
                 <div className="recent-post__title">
                     {this.props.title}
@@ -23,4 +22,5 @@ class Post extends Component {
         )
     }
 }
+
 export default Post;
