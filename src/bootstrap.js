@@ -10,7 +10,7 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f)(createStore)));
 
-/*import 'bootstrap/dist/css/bootstrap.css';*/
+//import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 import Home from './components/home';
