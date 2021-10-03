@@ -4,6 +4,7 @@ import SearchBar from './searchBar';
 import RecentPosts from './recentPosts';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+
 class Home extends Component {
 
   handleSearchBarSubmit(query) {
