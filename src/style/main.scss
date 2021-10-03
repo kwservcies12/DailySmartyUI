@@ -16,17 +16,25 @@ body {
     width: 66vw;
     display: grid;
     align-content: space-around;
-    justify-items: center;
-
+    //justify-items: stretch;
 }
 
 .logo-main,
-.recentPosts {
+.recent-posts 
+{
     display: grid;
     justify-items: center;
 }
 
+ul { 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
+$color-blue-one: #0079ff;
 
 @import './searchBar';
+@import './recentPosts';
