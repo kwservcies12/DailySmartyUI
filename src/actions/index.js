@@ -4,7 +4,6 @@ import {
 } from './types';
 
 import axios from 'axios';
-import { useCallback } from 'react';
 
 export function fetchRecentPosts() {
     return function(dispatch) {
@@ -18,7 +17,7 @@ export function fetchRecentPosts() {
     }
 }
 
-export function fetchPostsWithQuery(query) {
+export function fetchPostsWithQuery(query, callback) {
     return function(dispatch) {
         axios.get(`https://api.dailysmarty.com/search?q=${query}`)
             .then(response => {
