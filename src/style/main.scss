@@ -1,6 +1,4 @@
-.post-topic {
-    margin: 0 4px;
-}
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -24,12 +22,16 @@ ul {
   list-style-type: none;
 }
 
-
-
 $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
 $color-gray-three: #D8D8D8;
 $color-blue-one: #0079ff;
+
+.no-content {
+    color: $color-gray-one;
+    font-size: 14px;
+    line-height: 17px;
+}
 
 @import './mixins.scss';
 @import './searchBar';

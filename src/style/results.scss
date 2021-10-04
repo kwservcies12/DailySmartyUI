@@ -1,3 +1,4 @@
+
 .results {
     // @include default-page-layout();
     height: 100vh;
@@ -40,13 +41,16 @@
     }
 
     .result-post__links {
-        
+        display: flex;
+        //height: 70px;
     }
 }
 
 .post-link {
     min-height: 70px;
     display: flex;
+    flex-basis: 205px;
+    margin-right: 37px;
 
     .post-link__box {
         min-width: 70px;
